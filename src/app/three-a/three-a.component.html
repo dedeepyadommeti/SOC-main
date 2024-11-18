@@ -1,0 +1,13 @@
+<h1>3-a</h1>
+<div [style.background-color]="colorName" [style.color]="color" style="display: inline-block;">
+    Uses fixed yellow background
+</div><br/><br/>
+<p [ngStyle]="{
+    color:colorName2,
+    'font-weight':fontWeight,
+    borderBottom: borderStyle
+}" style="display: inline-block;">
+Demo for attribute directive ngStyle
+</p>
+<p [style.background-color] = "colorName" [style.color]="color" style="display: inline-block;" >Uses fixed yellow background</p><br>
+<p [style.color] = "colorName2" [style.border] = "borderStyle" style="display: inline-block;"> Demo for attribute directive ngStyle</p>

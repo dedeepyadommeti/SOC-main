@@ -1,0 +1,14 @@
+<h1>9-b</h1>
+<h1>Product List</h1>
+<div class="product-list">
+  <h2>Available Products</h2>
+  <ul>
+    <li *ngFor="let product of products" class="product-item">
+      <span class="product-id">ID: {{ product.id }}</span>
+      <span class="product-title">Title: {{ product.title }}</span>
+      <span class="product-status" [ngClass]="{'completed': product.completed, 'not-completed': !product.completed}">
+        Status: {{ product.completed ? 'Completed' : 'Not Completed' }}
+      </span>
+    </li>
+  </ul>
+</div>

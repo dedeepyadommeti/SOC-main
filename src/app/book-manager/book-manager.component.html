@@ -1,0 +1,17 @@
+<h2>Book Manager</h2>
+
+<form (ngSubmit)="addBook()">
+  <input type="number" [(ngModel)]="newBook.i" name="_id" placeholder="ID" required />
+  <input type="text" [(ngModel)]="newBook.titl" name="title" placeholder="Title" required />
+  <input type="text" [(ngModel)]="newBook.autho" name="author" placeholder="Author" required />
+  <input type="number" [(ngModel)]="newBook.publishedYea" name="publishedYear" placeholder="Published Year" required />
+  <button type="submit">Add Book</button>
+</form>
+
+<ul>
+  <li *ngFor="let book of books">
+    {{ book.titl }} by {{ book.autho }} ({{ book.publishedYea }})
+    <button (click)="updateBook(book)">Update</button>
+    <button (click)="deleteBook(book.i)">Delete</button>
+  </li>
+</ul>

@@ -1,0 +1,21 @@
+h1 {
+    font-weight: bolder;
+    font-size: 24px; 
+}
+.bordered {
+    border: 1px dashed black;
+    background-color: #eee;
+    display: inline-block;
+    width: 45%;
+
+}
+.bordered2 {
+  border: 1px dashed black;
+  background-color: #eee;
+  display: inline-block;
+  width:45%;
+
+}
+.color {
+  color: blue;
+}

@@ -1,0 +1,24 @@
+h1 {
+    font-weight: bolder;
+    font-size: 24px; 
+ }
+ .product-details-table {
+    width: 70%;
+    border-collapse: collapse;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .product-details-table th, .product-details-table td {
+    padding: 10px;
+    border: 2px solid black;
+  }
+  
+  .product-details-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .product-details-table tbody td {
+    background-color: #fafafa;
+  }
+  

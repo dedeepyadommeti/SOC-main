@@ -1,0 +1,37 @@
+<h1>5-b</h1>
+<h3>{{ title | titlecase }}</h3>
+
+<table class="product-details-table">
+  <thead>
+    <tr>
+      <th>Detail</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Product Code</td>
+      <td>{{ productCode | slice:5:9 }}</td>
+    </tr>
+    <tr>
+      <td>Product Name</td>
+      <td>{{ productName | uppercase }}</td>
+    </tr>
+    <tr>
+      <td>Product Price</td>
+      <td>{{ productPrice | currency: 'INR' }}</td>
+    </tr>
+    <tr>
+      <td>Purchase Date</td>
+      <td>{{ purchaseDate | date:'fullDate' | lowercase }}</td>
+    </tr>
+    <tr>
+      <td>Product Tax</td>
+      <td>{{ productTax | percent: '.2' }}</td>
+    </tr>
+    <tr>
+      <td>Product Rating</td>
+      <td>{{ productRating | number:'1.3-5' }}</td>
+    </tr>
+  </tbody>
+</table>

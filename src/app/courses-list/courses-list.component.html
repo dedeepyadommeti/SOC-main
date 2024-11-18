@@ -1,0 +1,20 @@
+<table border="1" *ngIf="course.length > 0" class="course-table">
+  <thead>
+    <tr>
+      <th>Course ID</th>
+      <th>Course Name</th>
+      <th>Duration</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let c of course">
+      <td>{{ c.courseId }}</td>
+      <td>{{ c.courseName }}</td>
+      <td>{{ c.duration }}</td>
+      <td>{{ c.description }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<p *ngIf="course.length === 0">No courses available. Please select a valid course.</p>

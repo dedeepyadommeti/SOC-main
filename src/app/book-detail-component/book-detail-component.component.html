@@ -1,0 +1,9 @@
+<div *ngIf="book">
+    <h3>Book Details</h3>
+    <p><strong>ID:</strong> {{ book.id }}</p>
+    <p><strong>Name:</strong> {{ book.name }}</p>
+  </div>
+  <div *ngIf="!book">
+    <p>Book not found.</p>
+  </div>
+  

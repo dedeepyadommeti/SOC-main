@@ -1,0 +1,10 @@
+h1 {
+    font-weight: bolder;
+    font-size: 24px; 
+  }
+  .cmp {
+    padding: 8px;
+    margin: 6px;
+    border: 2px solid red;
+    }
+  
